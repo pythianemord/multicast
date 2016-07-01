@@ -1,0 +1,18 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\N2N Edge GUI\Parameters]
+"community"="InsertCommHere"
+"enckey"=""
+"ip_address"="172.16.200.3"
+"keyfile"=""
+"local_port"=dword:0000160c
+"mac_address"=""
+"mapping_file_path"="C:\\Program Files (x86)\\N2N Edge GUI\\mapping.csv"
+"mapping_url"="http://web/mapping.csv"
+"mtu"=dword:00000000
+"multicast"=dword:00000001
+"packet_forwarding"=dword:00000001
+"resolve_ip"=dword:00000000
+"subnet_mask"=""
+"supernode_addr"="192.168.200.254"
+"supernode_port"=dword:000004b0

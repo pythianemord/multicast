@@ -1,0 +1,12 @@
+#Some changes since we are only running with two nodes and it's not the end of the world if both are running the services
+sudo crm configure property no-quorum-policy=ignore
+sudo crm configure property stonith-enabled=false 
+
+#Configure HA IP and dependent resources
+sudo crm configure primitive ha-ip ocf:heartbeat:IPaddr2 params ip=192.168.200.254 op monitor interval=2s
+sudo crm configure primitive supernode lsb::supernode op monitor interval=5s
+sudo crm configure primitive apache2 lsb::apache2 op monitor interval=5s
+sudo crm configure group supernode_cluster ha-ip supernode apache2 
+
+#Configure smcroute
+sudo crm configure primitive smcroute lsb::smcroute op monitor interval=2s 

@@ -1,0 +1,4 @@
+Source obtained from SourceForge project page: https://sourceforge.net/projects/n2nedgegui/
+
+Modifications made for static address assignment and route additions after tunnel interface is fully online, as well as some logging fixes.
+You may want to grab the latest version of the tuntap drivers from the OpenVPN project: http://swupdate.openvpn.org/community/releases/
